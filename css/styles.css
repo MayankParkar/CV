@@ -1,48 +1,80 @@
 body {
+  background-color: #000;
   margin: 0px;
   text-align: center;
-  font-family: "Merriweather", serif;
+  font-family: 'Press Start 2P', cursive;
 }
 p {
   line-height: 2;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Press Start 2P', cursive;
 }
 h1 {
-  color: #66bfbf;
+  color: #1593f3;
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
-  font-family: "Sacramento", cursive;
+  font-family: 'Press Start 2P', cursive;
 }
 h2 {
   font-weight: normal;
-  color: #66bfbf;
-  font-family: "Montserrat", sans-serif;
+  color: #1593f3;
+  font-family: 'Press Start 2P', cursive;
   font-size: 2.5rem;
 }
 h3 {
   color: #11999e;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Press Start 2P', cursive;
 }
 .intro {
   margin: auto;
+  color: white;
   width: 30%;
   margin-bottom: 100px;
 }
 hr {
   margin: 100px auto 100px auto;
   border-style: dotted none none;
-  border-color: #eaf6f6;
+  border-color: white;
   border-width: 10px;
   width: 10%;
 }
 .top-container {
-  background-color: #eaf6f6;
   position: relative;
   padding: 100px;
 }
+.key{
+  position: absolute;
+  filter: blur(8px);
+  -webkit-filter: blur(5px);
+  transform: translate(-50%,-50%);
+  width: 100%;
+  padding-bottom: 20%;
+  z-index: -1;
+  
+}
+.navbar{
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+a:link{
+  text-decoration: none;
+  padding: 0.5%;
+}
+li{
+  display: inline;
+}
+.container-fluid
+{
+  color: white;
+  text-align: left;
+}
+.profile{
+  position: relative;
+  padding-top: 20%;
+}
 
 .bottom-container {
-  background-color: #66bfbf;
+  background-color: #1593f3;
   margin-top: 60px;
   padding: 50px 0 20px;
 }
@@ -50,27 +82,17 @@ hr {
   text-decoration: underline;
 }
 
-.bottom-cloud {
-  position: absolute;
-  left: 20%;
-  bottom: 300px;
-}
-.top-cloud {
-  position: absolute;
-  right: 20%;
-  top: 50px;
-}
 .footer-link {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Press Start 2P', cursive;
   color: #1f5657;
   margin: 10px 20px;
   text-decoration: none;
 }
 .footer-link:hover {
-  color: #eaf6f6;
+  color: white;
 }
 .btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Press Start 2P', cursive;
   color: #11999e;
   background: #11cdd4;
   background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -98,6 +120,7 @@ hr {
 }
 .skill-row {
   margin: 200px auto 100px auto;
+  color: white;
   width: 50%;
   text-align: left;
 }
@@ -105,12 +128,12 @@ hr {
   margin-top: 20px;
   width: 25%;
 }
-.computer {
+.coding {
   width: 25%;
   float: left;
   margin-right: 30px;
 }
-.chillies {
+.run {
   float: right;
   margin-left: 30px;
   width: 25%;
@@ -121,6 +144,50 @@ hr {
 }
 .copyright {
   padding: 20px 0;
-  color: #eaf6f6;
+  color: white;
   font-size: 0.95rem;
+}
+.pie {
+  --w: 150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.pie:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+.pie:before {
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
 }
