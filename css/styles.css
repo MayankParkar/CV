@@ -2,27 +2,26 @@ body {
   background-color: #000;
   margin: 0px;
   text-align: center;
-  font-family: 'DotGothic16', sans-serif;
+  font-family: 'Raleway Dots', cursive;
 }
 p {
   line-height: 2;
-  font-family: 'DotGothic16', sans-serif;
+  font-family: 'Raleway Dots', cursive;
 }
 h1 {
   color: #1593f3;
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
-  font-family: 'DotGothic16', sans-serif;
-}
+      font-family: 'Raleway Dots', cursive;
 h2 {
   font-weight: normal;
   color: #1593f3;
-  font-family: 'DotGothic16', sans-serif;
+      font-family: 'Raleway Dots', cursive;
   font-size: 2.5rem;
 }
 h3 {
   color: #11999e;
-  font-family: 'DotGothic16', sans-serif;
+      font-family: 'Raleway Dots', cursive;
 }
 .intro {
   margin: auto;
@@ -83,7 +82,7 @@ li{
 }
 
 .footer-link {
-  font-family: 'DotGothic16', sans-serif;
+      font-family: 'Raleway Dots', cursive;
   color: #1f5657;
   margin: 10px 20px;
   text-decoration: none;
@@ -92,7 +91,7 @@ li{
   color: white;
 }
 .btn {
- font-family: 'DotGothic16', sans-serif;
+     font-family: 'Raleway Dots', cursive;
   color: #11999e;
   background: #11cdd4;
   background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
